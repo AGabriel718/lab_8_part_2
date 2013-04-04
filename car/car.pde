@@ -4,7 +4,8 @@ void setup() {
 }
 
 int x = 200;
-
+int y = 1;
+int v = 3;
 void draw() {
   noStroke();
   
@@ -29,5 +30,8 @@ void draw() {
   fill(0, 0, 0);
   ellipse(x + 20, 320, 20, 20);
   ellipse(x + 60, 320, 20, 20);
-
+x = x + v;
+if (x >= 500) {
+  x = 1;
+}
 }
